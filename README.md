@@ -2,7 +2,7 @@
 
 
 Live Link
-
+https://danielfyeh.github.io/RPS-multiplayer/
 
 Description on how to use the app
 Input name and enter game lobby
