@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplayer RPS</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="playerSelect"> Multiplayer RPS </div>
+        <!-- Sign-Up Panel-->
+        <div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Input Player Name</h3>
+                </div>
+                <div class="panel-body">
+                    <!-- Sign-up Form (note the various input "types")-->
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="name-input">Name:</label>
+                            <input class="form-control" id="name-input" type="text">
+                            <button class="btn btn-default" id="add-user" type="submit" value="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            Select Rock, Paper, or Scissors
+            <div>
+                <button type="button" class="btn btn-default btn-lg" value="rock">Rock</button>
+                <button type="button" class="btn btn-default btn-lg" value="paper">Paper</button>
+                <button type="button" class="btn btn-default btn-lg" value="scissors">Scissors</button>
+            </div>
+        </div>
+        <div>
+            <div id ="wins">Player Wins: </div>
+            <div id="losses">Player Losses: </div>
+            <button type="button" class="btn btn-default btn-lg" value="reset">Reset Game</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
